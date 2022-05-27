@@ -1,0 +1,38 @@
+{
+  "name": "admin-templete",
+  "version": "1.0.0",
+  "description": "",
+  "proxy": "http://localhost/",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,hbs,css --watch ./ --inspect --trace-warnings index.js"
+  },
+  "author": "admin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "connect-mongo": "^4.6.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "fcm-node": "^1.6.1",
+    "hbs": "^4.2.0",
+    "jquery": "^3.6.0",
+    "json2csv": "^5.0.7",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.4",
+    "mongoose-aggregate-paginate-v2": "^1.0.6",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-paginate-v2": "^1.6.3",
+    "nodemon": "^2.0.16",
+    "uuid-token-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}
