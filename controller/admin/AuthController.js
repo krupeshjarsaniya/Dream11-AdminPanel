@@ -64,6 +64,33 @@ router.get('/user-list', (req, res) => {
     res.render('admin/user/user_list', {data: dataObject});
 });
 
+
+router.get('/form-layouts', (req, res) => {
+    var dataObject = {
+        'title': 'Form Layouts'
+    };
+    res.render('admin/user/form-layouts', {data: dataObject});
+});
+
+
+router.get('/forms-input-groups', (req, res) => {
+    var dataObject = {
+        'title': 'Forms-input-groups'
+    };
+    res.render('admin/user/forms-input-groups', {data: dataObject});
+});
+
+
+router.get('/tables-basic', (req, res) => {
+    var dataObject = {
+        'title': 'tables-basic'
+    };
+    res.render('admin/user/tables-basic', {data: dataObject});
+});
+
+
+
+
 router.get('/error', (req, res) => {
     // if (req.session.user)
     //     return res.redirect('/admin/dashboard');
