@@ -12,11 +12,45 @@ router.get('/', (req, res) => {
     res.render('admin/dashboard', {data: dataObject});
 });
 
+router.get('/without-menu', (req, res) => {
+    var dataObject = {
+        'title': 'without-menu'
+    };
+    res.render('admin/user/without-menu', {data: dataObject});
+});
+
+router.get('/without-navbar', (req, res) => {
+    var dataObject = {
+        'title': 'without-navbar'
+    };
+    res.render('admin/user/without-navbar', {data: dataObject});
+});
+
+router.get('/container', (req, res) => {
+    var dataObject = {
+        'title': 'Container'
+    };
+    res.render('admin/user/container', {data: dataObject});
+});
+
+router.get('/fluid', (req, res) => {
+    var dataObject = {
+        'title': 'Fluid'
+    };
+    res.render('admin/user/fluid', {data: dataObject});
+});
+
+router.get('/blank', (req, res) => {
+    var dataObject = {
+        'title': 'Blank'
+    };
+    res.render('admin/user/blank', {data: dataObject});
+});
+
 router.get('/login', (req, res) => {
     var dataObject = {
         'title': 'Login'
     };
-    // res.render('admin/auth/login');
     res.render('admin/auth/login', {data: dataObject});
 });
 
@@ -24,7 +58,6 @@ router.get('/register', (req, res) => {
     var dataObject = {
         'title': 'Register'
     };
-    // res.render('admin/auth/login');
     res.render('admin/auth/register', {data: dataObject});
 });
 
@@ -32,7 +65,6 @@ router.get('/forgot-password', (req, res) => {
     var dataObject = {
         'title': 'Forgot Password'
     };
-    // res.render('admin/auth/login');
     res.render('admin/auth/forgot-password', {data: dataObject});
 });
 
@@ -65,13 +97,19 @@ router.get('/user-list', (req, res) => {
 });
 
 
-router.get('/form-layouts', (req, res) => {
+router.get('/form-layouts-horizontal', (req, res) => {
     var dataObject = {
-        'title': 'Form Layouts'
+        'title': 'Form Layouts Horizontal'
     };
-    res.render('admin/user/form-layouts', {data: dataObject});
+    res.render('admin/user/form-layouts-horizontal', {data: dataObject});
 });
 
+router.get('/form-layouts-vertical', (req, res) => {
+    var dataObject = {
+        'title': 'Form Layouts Vertical'
+    };
+    res.render('admin/user/form-layouts-vertical', {data: dataObject});
+});
 
 router.get('/forms-input-groups', (req, res) => {
     var dataObject = {
@@ -80,6 +118,12 @@ router.get('/forms-input-groups', (req, res) => {
     res.render('admin/user/forms-input-groups', {data: dataObject});
 });
 
+router.get('/forms-basic-inputs', (req, res) => {
+    var dataObject = {
+        'title': 'Forms-basic-inputs'
+    };
+    res.render('admin/user/forms-basic-inputs', {data: dataObject});
+});
 
 router.get('/tables-basic', (req, res) => {
     var dataObject = {
@@ -88,8 +132,40 @@ router.get('/tables-basic', (req, res) => {
     res.render('admin/user/tables-basic', {data: dataObject});
 });
 
+router.get('/under-maintenance', (req, res) => {
+    var dataObject = {
+        'title': 'under-maintenance'
+    };
+    res.render('admin/user/under-maintenance', {data: dataObject});
+});
 
+router.get('/cards', (req, res) => {
+    var dataObject = {
+        'title': 'cards'
+    };
+    res.render('admin/user/cards', {data: dataObject});
+});
 
+router.get('/perfect-scrollbar', (req, res) => {
+    var dataObject = {
+        'title': 'perfect-scrollbar'
+    };
+    res.render('admin/user/perfect-scrollbar', {data: dataObject});
+});
+
+router.get('/text-divider', (req, res) => {
+    var dataObject = {
+        'title': 'text-divider'
+    };
+    res.render('admin/user/text-divider', {data: dataObject});
+});
+
+router.get('/boxIcons', (req, res) => {
+    var dataObject = {
+        'title': 'boxIcons'
+    };
+    res.render('admin/user/boxIcons', {data: dataObject});
+});
 
 router.get('/error', (req, res) => {
     // if (req.session.user)
